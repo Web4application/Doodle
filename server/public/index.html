@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>doodle.dev</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #212429; /* Dark background color */
+				color: #f5f5f5; /* Text color */
+			}
+			.container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100vh;
+			}
+			.content {
+				text-align: center;
+			}
+			h1 {
+				color: #39e079; /* Primary color for heading */
+				margin-bottom: 1rem;
+			}
+			p {
+				color: #f5f5f5; /* Text color */
+				margin-bottom: 1rem;
+			}
+			.time {
+				color: #888;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h1>🚀 API is running smoothly! 🌟</h1>
+				<p>
+					Welcome to Doodle . Everything is set up and ready
+					to go!
+				</p>
+				<p class="time">Current Time: <span id="currentTime"></span></p>
+			</div>
+		</div>
+		<script>
+			document.getElementById("currentTime").innerText =
+				new Date().toLocaleTimeString()
+		</script>
+
+    const componentTagName = "exported-content";
+
+export class ExportedContent extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+<style>
+
+/* Google Fonts - Only loaded fonts/weights actually used in content */
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: visible;
+        }
+#content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            flex: 1 1 0;
+            min-width: 0;
+            min-height: 0;
+            container-type: size;
+            background: transparent;
+            position: relative;
+            z-index: 1;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        
+        :host {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        #exported-content {
+            position: relative;
+    min-width: 0;
+            aspect-ratio: 804 / 576;
+    width: 100%;
+            height: auto;
+            
+        }
+        
+        .item {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            container-type: size;
+        }
+        .shape {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+            image-rendering: auto;
+            backface-visibility: hidden;
+            
+        }
+
+        
+        
+@keyframes rotate-in {
+    0% {
+        left: 22.388059701492537%;
+        top: 75%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 82.08955223880598%;
+        top: 75%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in {
+    animation: rotate-in 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-reverse {
+    animation: rotate-in 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-1 {
+    0% {
+        left: 22.388059701492537%;
+        top: 0%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 82.08955223880598%;
+        top: 0%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-1 {
+    animation: rotate-in-1 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-1-reverse {
+    animation: rotate-in-1 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-2 {
+    0% {
+        left: 22.388059701492537%;
+        top: 25%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 82.08955223880598%;
+        top: 25%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-2 {
+    animation: rotate-in-2 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-2-reverse {
+    animation: rotate-in-2 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-3 {
+    0% {
+        left: 22.388059701492537%;
+        top: 50%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 82.08955223880598%;
+        top: 50%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-3 {
+    animation: rotate-in-3 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-3-reverse {
+    animation: rotate-in-3 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-4 {
+    0% {
+        left: 61.19402985074627%;
+        top: 0%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-4 {
+    animation: rotate-in-4 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-4-reverse {
+    animation: rotate-in-4 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-5 {
+    0% {
+        left: 61.19402985074627%;
+        top: 75%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0%;
+        top: 75%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-5 {
+    animation: rotate-in-5 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-5-reverse {
+    animation: rotate-in-5 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-6 {
+    0% {
+        left: 61.19402985074627%;
+        top: 50%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0%;
+        top: 50%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-6 {
+    animation: rotate-in-6 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-6-reverse {
+    animation: rotate-in-6 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+@keyframes rotate-in-7 {
+    0% {
+        left: 61.19402985074627%;
+        top: 25%;
+        
+        transform: rotate(0deg);
+    }
+    100% {
+        left: 0%;
+        top: 25%;
+        
+        transform: rotate(360deg);
+    }
+}
+
+.animation-rotate-in-7 {
+    animation: rotate-in-7 0.9736842105263157s ease-in-out forwards !important;
+    
+}
+.animation-rotate-in-7-reverse {
+    animation: rotate-in-7 0.9736842105263157s ease-in-out reverse forwards !important;
+    
+}
+
+    
+</style>
+
+<div id="exported-content">
+<div
+    id="square-1" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-7"
+    data-animation-class="animation-rotate-in-7"
+    data-animation-class-reverse="animation-rotate-in-7-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 61.194%;
+      top: 25%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 1
+    "
+  >
+<div
+      class="shape"
+      style="
+        background-color: rgb(0, 68, 255);
+        background-image: linear-gradient(90deg, rgb(0, 105, 255) 0%, rgb(0, 31, 115) 100%);
+        border-radius: 18.7500cqw;
+        box-shadow: rgba(0, 0, 0, 0.376) -2.7778cqw -2.7778cqw 5.5556cqw inset, rgba(255, 255, 255, 0.376) 2.7778cqw 2.7778cqw 5.5556cqw inset;
+        filter: drop-shadow(rgba(0, 0, 0, 0.3) 5px 5px 3.5px)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="circle-1" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-6"
+    data-animation-class="animation-rotate-in-6"
+    data-animation-class-reverse="animation-rotate-in-6-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 61.194%;
+      top: 50%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 2
+    "
+  >
+<div
+      class="shape"
+      style="
+        border-radius: 50%;
+        background-color: rgb(255, 0, 0);
+        background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(115, 0, 0) 100%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="triangle-1" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-5"
+    data-animation-class="animation-rotate-in-5"
+    data-animation-class-reverse="animation-rotate-in-5-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 61.194%;
+      top: 75%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 3
+    "
+  >
+<div
+      class="shape"
+      style="
+        clip-path: polygon(50% -1px, 101% 101%, -1px 101%);
+        background-color: rgb(0, 236, 0);
+        background-image: linear-gradient(90deg, rgb(0, 255, 0) 0%, rgb(0, 106, 0) 100%);
+        clip-path: polygon(50% -1px, 101% 101%, -1px 101%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="octagon-1" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-4"
+    data-animation-class="animation-rotate-in-4"
+    data-animation-class-reverse="animation-rotate-in-4-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 61.194%;
+      top: 0%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 4
+    "
+  >
+<div
+      class="shape"
+      style="
+        clip-path: polygon(30% -1px, 70% -1px, 101% 30%, 101% 70%, 70% 101%, 30% 101%, -1px 70%, -1px 30%);
+        background-color: rgb(255, 187, 0);
+        background-image: linear-gradient(90deg, rgb(255, 255, 0) 0%, rgb(115, 84, 0) 100%);
+        clip-path: polygon(30% -1px, 70% -1px, 101% 30%, 101% 70%, 70% 101%, 30% 101%, -1px 70%, -1px 30%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="octagon-2" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-3"
+    data-animation-class="animation-rotate-in-3"
+    data-animation-class-reverse="animation-rotate-in-3-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 22.3881%;
+      top: 50%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 5
+    "
+  >
+<div
+      class="shape"
+      style="
+        clip-path: polygon(30% -1px, 70% -1px, 101% 30%, 101% 70%, 70% 101%, 30% 101%, -1px 70%, -1px 30%);
+        background-color: rgb(0, 68, 255);
+        background-image: linear-gradient(135deg, rgb(0, 92, 255) 0%, rgb(0, 44, 166) 100%);
+        clip-path: polygon(30% -1px, 70% -1px, 101% 30%, 101% 70%, 70% 101%, 30% 101%, -1px 70%, -1px 30%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="triangle-2" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-2"
+    data-animation-class="animation-rotate-in-2"
+    data-animation-class-reverse="animation-rotate-in-2-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 22.3881%;
+      top: 25%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 6
+    "
+  >
+<div
+      class="shape"
+      style="
+        clip-path: polygon(50% -1px, 101% 101%, -1px 101%);
+        background-color: rgb(255, 0, 0);
+        background-image: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(166, 0, 0) 100%);
+        clip-path: polygon(50% -1px, 101% 101%, -1px 101%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="circle-2" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in-1"
+    data-animation-class="animation-rotate-in-1"
+    data-animation-class-reverse="animation-rotate-in-1-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 22.3881%;
+      top: 0%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 7
+    "
+  >
+<div
+      class="shape"
+      style="
+        border-radius: 50%;
+        background-color: rgb(0, 236, 0);
+        background-image: linear-gradient(rgb(0, 255, 0) 0%, rgb(0, 153, 0) 100%)
+      "
+    >
+    </div>
+  </div>
+<div
+    id="square-2" class="item"
+    data-has-animation="true"
+    data-animation-speed="0.9736842105263157"
+    data-animation-name="rotate-in"
+    data-animation-class="animation-rotate-in"
+    data-animation-class-reverse="animation-rotate-in-reverse"
+    data-animation-trigger="hover"
+    style="
+      left: 22.3881%;
+      top: 75%;
+      width: 17.9104%;
+      height: 25%;
+      z-index: 8
+    "
+  >
+<div
+      class="shape"
+      style="
+        background-color: rgb(255, 187, 0);
+        background-image: radial-gradient(circle, rgb(255, 252, 0) 0%, rgb(166, 122, 0) 100%);
+        border-radius: 13.8889cqw;
+        box-shadow: rgba(0, 0, 0, 0.3) 1.3889cqw 1.3889cqw 2.7778cqw inset, rgba(255, 255, 255, 0.3) -1.3889cqw -1.3889cqw 2.7778cqw inset;
+        filter: none
+      "
+    >
+    </div>
+  </div>
+</div>
+
+`;
+  }
+<p> 
+  <script>
+    
+  connectedCallback() {
+    // Add hover animation functionality
+    const items = this.shadowRoot.querySelectorAll('.item[data-has-animation="true"]');
+    
+    items.forEach(item => {
+      const animationName = item.dataset.animationName;
+      const animationSpeed = parseFloat(item.dataset.animationSpeed) || 1;
+      const trigger = item.dataset.animationTrigger;
+      
+      if (trigger === 'hover') {
+        item.addEventListener('mouseenter', () => {
+          this.toggleAnimation(item, animationName, animationSpeed);
+        });
+        
+        item.addEventListener('mouseleave', () => {
+          this.toggleAnimation(item, animationName, animationSpeed);
+        });
+      }
+    });
+  }
+
+  toggleAnimation(wrapper, animationName, speed = 1) {
+    if (wrapper.getAttribute('data-animating') === 'true') return;
+    
+    const lastState = wrapper.getAttribute('data-last-animation') || 'none';
+    const nextState = this.getNextToggleState(lastState);
+    
+    this.resetAnimationState(wrapper);
+    this.playAnimation(wrapper, animationName, nextState === 'reverse' ? 'reverse' : 'forward', speed);
+    
+    wrapper.setAttribute('data-last-animation', nextState);
+  }
+
+  getNextToggleState(lastState) {
+    return lastState === 'none' || lastState === 'reverse' ? 'forward' : 'reverse';
+  }
+
+  playAnimation(wrapper, animationName, direction, speed = 1) {
+    // Check if already animating
+    if (wrapper.getAttribute('data-animating') === 'true') return;
+    
+    // Reset animation state (remove all animation classes)
+    this.resetAnimationState(wrapper);
+    
+    // Get the correct animation class
+    const className = direction === 'reverse'
+        ? wrapper.dataset.animationClassReverse || 'animation-' + animationName + '-reverse'
+        : wrapper.dataset.animationClass || 'animation-' + animationName;
+    
+    // Add the new animation class
+    wrapper.classList.add(className);
+    wrapper.style.animationDuration = `${speed}s`;
+    wrapper.setAttribute('data-animating', 'true');
+    
+    // Handle animation end
+    const handleAnimationEnd = () => {
+      wrapper.removeAttribute('data-animating');
+    };
+    
+    wrapper.addEventListener('animationend', handleAnimationEnd, { once: true });
+    
+    // Fallback timeout
+    setTimeout(() => {
+      wrapper.removeAttribute('data-animating');
+    }, (speed * 1000) + 50);
+  }
+
+  resetAnimationState(wrapper) {
+    // Remove all animation classes
+    this.removeAnimationClasses(wrapper);
+    wrapper.style.animationDuration = "";
+    wrapper.style.transform = "";
+    // Force reflow
+    void wrapper.offsetWidth;
+  }
+
+  removeAnimationClasses(element) {
+    const classesToRemove = [];
+    element.classList.forEach(cls => {
+      if (cls.startsWith('animation-')) {
+        classesToRemove.push(cls);
+      }
+    });
+    classesToRemove.forEach(cls => element.classList.remove(cls));
+  }
+}
+
+if (!customElements.get(componentTagName)) {
+  customElements.define(componentTagName, ExportedContent);
+}
+
+export { componentTagName };
+</script>
+  </body>
+</html>
